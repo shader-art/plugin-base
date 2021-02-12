@@ -1,6 +1,6 @@
 {
   "name": "@shader-art/plugin-base",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "type": "module",
   "repository": "shader-art/plugin-base",
@@ -8,7 +8,9 @@
   "types": "./dist/index.d.ts",
   "source": "./src/index.ts",
   "unpkg": "./dist/index.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     "import": "./dist/index.esm.js",
     "require": "./dist/index.cjs"
@@ -23,7 +25,11 @@
     "build:cjs": "tsc -t esnext -m commonjs && mv dist/index.js dist/index.cjs",
     "test": "npx @skypack/package-check"
   },
-  "keywords": ["webgl", "glsl", "creative-coding"],
+  "keywords": [
+    "webgl",
+    "glsl",
+    "creative-coding"
+  ],
   "author": "Lea Rosema",
   "license": "MIT",
   "devDependencies": {
