@@ -1,6 +1,6 @@
 {
   "name": "@shader-art/plugin-base",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Interface for shader-art plugins",
   "type": "module",
   "repository": "shader-art/plugin-base",
