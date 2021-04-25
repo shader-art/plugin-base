@@ -7,13 +7,9 @@ export interface ShaderArtPlugin {
     canvas: HTMLCanvasElement
   ): void | Promise<void>;
 
-  onBeforeCompileShader?: (
-    hostElement: HTMLElement,
-    gl: WebGLRenderingContext | WebGL2RenderingContext,
-    program: WebGLProgram,
-    canvas: HTMLCanvasElement,
-    vertexShader: string,
-    fragmentShader: string
-  ) => void;
+  onBeforeCompileShader?: (shaders: {
+    vertexShader: string;
+    fragmentShader: string;
+  }) => void;
   dispose(): void;
 }
