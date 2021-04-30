@@ -11,5 +11,11 @@ export interface ShaderArtPlugin {
     vertexShader: string;
     fragmentShader: string;
   }) => void;
+
+  onFrame ?: (
+    hostElement: HTMLElement,
+    gl: WebGLRenderingContext | WebGL2RenderingContext,
+    program: WebGLProgram,
+    canvas: HTMLCanvasElement) => void;
   dispose(): void;
 }
